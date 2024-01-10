@@ -20,6 +20,8 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
+env:
+  NODE_OPTIONS: "--openssl-legacy-provider"
 
 jobs:
   # Single deploy job since we're just deploying
