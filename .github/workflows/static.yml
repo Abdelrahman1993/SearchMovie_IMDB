@@ -42,7 +42,7 @@ jobs:
         run: |
           npm install -g @angular/cli
           npm install
-          ng build --prod --base-href=/SearchMovie_IMDB/
+          ng build --prod --base-href=/SearchMovie_IMDB/project/
           echo "------------- debug step ---------------"
           ls -la
           head dist/project/index.html || true
