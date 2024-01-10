@@ -43,6 +43,8 @@ jobs:
           npm install -g @angular/cli
           npm install
           ng build
+          echo "------------- debug step ---------------"
+          ls -la
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
