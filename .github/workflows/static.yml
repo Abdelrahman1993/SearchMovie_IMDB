@@ -45,6 +45,9 @@ jobs:
           ng build --prod --base-href=/SearchMovie_IMDB
           echo "------------- debug step ---------------"
           ls -la
+          head dist/project/index.html || true
+          head dist/index.html || true
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
